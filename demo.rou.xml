@@ -1,0 +1,32 @@
+<routes>
+	<vType id="car" vClass="passenger" length="5" accel="3.5" decel="2.2" sigma="1.0" maxspeed="10"/>
+	<vType id="ev" vClass="emergency" length="7" accel="5.5" decel="2.2" sigma="1.0" maxspeed="20" guishape="emergency" speedFactor="2.0" minCapLat="0.2" color="1,1,1"/> 
+	
+	<route id="r0" edges="E0 E3"/>
+	<route id="r1" edges="E0 E2"/>
+	<route id="r2" edges="E0 E1"/>
+	<route id="r3" edges="-E2 -E0"/>
+	<route id="r4" edges="-E1 -E0"/>
+	<route id="r5" edges="-E3 -E0"/>
+	
+	<flow id="evflow" type="ev" beg="0" end="0" depart="10" number="1" from="-E2" to="-E0"/>
+	<flow id="carflow" type="car" beg="30" end="0" number="3" from="E0" to="E2"/>
+
+    <vehicle id="0" type="car" route="r0" depart="20"/>
+    <!--<vehicle id="1" type="ev" route="r1" depart="20"/>-->
+    <vehicle id="2" type="car" route="r2" depart="20"/>
+    <!--<vehicle id="3" type="car" route="r3" depart="20"/>-->
+    <!--<vehicle id="4" type="ev" route="r4" depart="50"/>-->
+    <vehicle id="5" type="car" route="r2" depart="60"/>
+    <vehicle id="6" type="car" route="r5" depart="70"/>
+		
+	<!-- Enable TraCI for vehicles -->
+	
+    <!--<additional>
+        <traci_connection>
+            <remoteport>8813</remoteport>
+            <host>localhost</host>
+        </traci_connection>
+    </additional>-->
+			
+</routes>

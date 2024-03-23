@@ -1,0 +1,4 @@
+<additional>
+	<inductionLoop id="det_0" lane="-E2_0" pos="15" freq="300" file="det1.out"/>
+	<inductionLoop id="det_1" lane="-E0_0" pos="5" freq="300" file="det1.out"/>
+</additional>
