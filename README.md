@@ -42,6 +42,6 @@ This repository contains a simulation for handling emergency vehicle priority at
    ```
    
 4. **Logic**:
-   The simulation includes induction loop detectors placed on the road.
-   The system continuously monitors these detectors to identify vehicles of type "ev" (emergency vehicles).
-   Once an emergency vehicle is detected, the traffic signal phase changes to green for the lane that the emergency vehicle is approaching, allowing it to pass through the junction.
+   -The simulation includes induction loop detectors placed on the road.
+   -The system continuously monitors these detectors to identify vehicles of type "ev" (emergency vehicles).
+   -Once an emergency vehicle is detected, the traffic signal phase changes to green for the lane that the emergency vehicle is approaching, allowing it to pass through the junction.
